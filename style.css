@@ -141,7 +141,12 @@ button+.next {
     border-radius: 50%;
     box-shadow: 20px 20px 32px -13px rgba(66, 68, 90, 1);
 }
-
+button+.back{
+    padding-left: 1vw;
+}
+button+.next{
+    padding-right: 1vw;
+}
 .faded {
     font-size: 2vh;
     font-weight: bolder;
@@ -182,4 +187,7 @@ button+.next {
     background: rgb(123, 105, 201);
     cursor: pointer;
     border-radius: 50%;
+}
+button,i,svg,.song-cover{
+    cursor: pointer;
 }
