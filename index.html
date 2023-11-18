@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/68df24911a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="song">
+            <img src="./assets/cover/One Love.jpg" alt="" class="song-cover">
+            <div class="details">
+                <h2 class="now-playing">Now Playing</h2>
+                <div class="name-singer">
+                    <h1 class="song-name">One Love</h1>
+                    <h2 class="song-singer">Shubh</h2>
+                </div>
+            </div>
+            <div class="actions">
+                <i class="like fa-regular fa-heart fa-lg"></i>
+                <svg class="ass-to-playlist" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.25 6C2.25 5.58579 2.58579 5.25 3 5.25H21C21.4142 5.25 21.75 5.58579 21.75 6C21.75 6.41421 21.4142 6.75 21 6.75H3C2.58579 6.75 2.25 6.41421 2.25 6ZM2.25 10C2.25 9.58579 2.58579 9.25 3 9.25H21C21.4142 9.25 21.75 9.58579 21.75 10C21.75 10.4142 21.4142 10.75 21 10.75H3C2.58579 10.75 2.25 10.4142 2.25 10ZM19.2053 13.4431L19.2948 13.4948C20.0836 13.9501 20.7374 14.3276 21.2037 14.681C21.6788 15.041 22.105 15.4808 22.2158 16.1093C22.2614 16.3678 22.2614 16.6322 22.2158 16.8907C22.105 17.5192 21.6788 17.959 21.2037 18.319C20.7374 18.6724 20.0836 19.0499 19.2947 19.5053L19.2053 19.5569C18.4165 20.0124 17.7626 20.3899 17.2235 20.617C16.6741 20.8485 16.0802 20.9977 15.4805 20.7794C15.2338 20.6896 15.0048 20.5574 14.8037 20.3887C14.3148 19.9784 14.1471 19.3894 14.0728 18.798C14 18.2175 14 17.4625 14 16.5517V16.4483C14 15.5375 14 14.7825 14.0728 14.202C14.1471 13.6106 14.3148 13.0216 14.8037 12.6113C15.0048 12.4426 15.2338 12.3104 15.4805 12.2206C16.0802 12.0023 16.6741 12.1515 17.2235 12.383C17.7626 12.6101 18.4165 12.9876 19.2053 13.4431ZM16.6411 13.7653C16.1992 13.5791 16.051 13.6092 15.9935 13.6302C15.9113 13.6601 15.8349 13.7042 15.7679 13.7604C15.721 13.7998 15.6209 13.913 15.5611 14.3888C15.5014 14.8646 15.5 15.5243 15.5 16.5C15.5 17.4757 15.5014 18.1354 15.5611 18.6112C15.6209 19.087 15.721 19.2002 15.7679 19.2396C15.8349 19.2958 15.9113 19.3399 15.9935 19.3698C16.051 19.3908 16.1992 19.4209 16.6411 19.2347C17.083 19.0485 17.655 18.7199 18.5 18.2321C19.345 17.7442 19.9156 17.4131 20.2978 17.1235C20.68 16.8339 20.728 16.6905 20.7386 16.6302C20.7538 16.5441 20.7538 16.4559 20.7386 16.3698C20.728 16.3095 20.68 16.1661 20.2978 15.8765C19.9156 15.5869 19.345 15.2558 18.5 14.7679C17.655 14.2801 17.083 13.9515 16.6411 13.7653ZM2.25 14C2.25 13.5858 2.58579 13.25 3 13.25H11C11.4142 13.25 11.75 13.5858 11.75 14C11.75 14.4142 11.4142 14.75 11 14.75H3C2.58579 14.75 2.25 14.4142 2.25 14ZM2.25 18C2.25 17.5858 2.58579 17.25 3 17.25H11C11.4142 17.25 11.75 17.5858 11.75 18C11.75 18.4142 11.4142 18.75 11 18.75H3C2.58579 18.75 2.25 18.4142 2.25 18Z"
+                            fill="#1C274C"></path>
+                    </g>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="share">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.803 5.33333C13.803 3.49238 15.3022 2 17.1515 2C19.0008 2 20.5 3.49238 20.5 5.33333C20.5 7.17428 19.0008 8.66667 17.1515 8.66667C16.2177 8.66667 15.3738 8.28596 14.7671 7.67347L10.1317 10.8295C10.1745 11.0425 10.197 11.2625 10.197 11.4872C10.197 11.9322 10.109 12.3576 9.94959 12.7464L15.0323 16.0858C15.6092 15.6161 16.3473 15.3333 17.1515 15.3333C19.0008 15.3333 20.5 16.8257 20.5 18.6667C20.5 20.5076 19.0008 22 17.1515 22C15.3022 22 13.803 20.5076 13.803 18.6667C13.803 18.1845 13.9062 17.7255 14.0917 17.3111L9.05007 13.9987C8.46196 14.5098 7.6916 14.8205 6.84848 14.8205C4.99917 14.8205 3.5 13.3281 3.5 11.4872C3.5 9.64623 4.99917 8.15385 6.84848 8.15385C7.9119 8.15385 8.85853 8.64725 9.47145 9.41518L13.9639 6.35642C13.8594 6.03359 13.803 5.6896 13.803 5.33333Z"
+                            fill="#1C274C"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="time-details">
+                <input type="range" name="" class="timeline">
+                <div class="time">
+                    <span class="current-time">00:00</span>
+                    <span class="total-time">00:00</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="faded shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+                <button class="faded play-begin">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+                <button class="highlighted back">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="highlighted play-pause">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button class="highlighted next">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <button class="faded loop">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+                <button class="faded equalizer">
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
+            </div>
+            <div class="volume">
+                <i class="fa-solid fa-volume-xmark"></i>
+                <input type="range" name="">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

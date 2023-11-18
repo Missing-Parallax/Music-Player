@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(226, 223, 234) ;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 223, 234);
+    margin: 2% auto;
+    width: 50vw;
+    border-radius: 3rem;
+    box-shadow: 0px 33px 52px -13px rgba(66, 68, 90, 1);
+}
+
+.song {
+    background-color: rgb(226, 223, 234);
+    padding: 2.3rem;
+    display: flex;
+    border-radius: 3rem;
+    justify-content: space-between;
+    font-family: "Nunito Sans", sans-serif;
+    box-shadow: 0px 33px 52px -13px rgba(66, 68, 90, 1);
+}
+
+.song-cover {
+    border-radius: 2rem;
+    height: 18vw;
+    align-self: center;
+}
+
+.details {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding-top: 3vh;
+}
+
+.now-playing {
+    font-weight: bolder;
+    color: rgba(100, 90, 141, 0.641);
+    font-size: 1.3vw;
+}
+
+.name-singer {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.song-name {
+    color: rgb(99, 36, 124);
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+.song-singer {
+    color: rgb(154, 91, 179);
+    font-size: 1.6vw;
+}
+
+.actions {
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+    color: rgb(50,39,85);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+    gap: 5vh;
+}
+
+.time-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.timeline {
+    appearance: none;
+    background-color: rgb(103, 65, 210);
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 0.7vh solid rgb(197, 190, 207);
+    height: 1vh;
+}
+
+.timeline::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5vw;
+    height: 1.5vw;
+    background: rgb(123, 105, 201);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.timeline::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5vw;
+    height: 1.5vw;
+    background: rgb(123, 105, 201);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bolder;
+    color: rgb(165, 149, 186);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+button+.back,
+button+.play-pause,
+button+.next {
+    padding: 1vw 1.4vw;
+    font-size: 3.5vh;
+    color: white;
+    background-color: rgb(102, 79, 199);
+    border: 1vh solid rgba(255, 255, 255, 0.477);
+    border-radius: 50%;
+    box-shadow: 20px 20px 32px -13px rgba(66, 68, 90, 1);
+}
+
+.faded {
+    font-size: 2vh;
+    font-weight: bolder;
+    color: rgb(103, 102, 109);
+}
+
+.volume {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+    color: rgb(103, 102, 109);
+    align-items: center;
+}
+
+.volume input {
+    width: 20vw;
+    appearance: none;
+    background-color: rgb(103, 65, 210);
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 0.7vh solid rgb(197, 190, 207);
+    height: 1vh;
+}
+.volume input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    background: rgb(123, 105, 201);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.volume input::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    background: rgb(123, 105, 201);
+    cursor: pointer;
+    border-radius: 50%;
+}
